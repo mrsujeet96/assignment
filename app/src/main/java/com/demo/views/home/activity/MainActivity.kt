@@ -26,7 +26,6 @@ class MainActivity : AppCompatActivity() {
         initView()
     }
 
-
     /**
      * used to init binding and set view model
      */

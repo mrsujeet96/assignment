@@ -27,7 +27,7 @@ class LoginViewModel : ViewModel() {
     val loginResponse = MutableLiveData<LoginResponseModel>()
     private var apiServiceProvider: ApiServiceProvider? = null
     var loginRequestModel: LoginRequestModel? = null
-    var phoneNumber: ObservableField<String> = ObservableField("9876543212")
+    var phoneNumber: ObservableField<String> = ObservableField()
     var countryCode: ObservableField<String> = ObservableField("+91")
     var dialog: Dialog?=null
 

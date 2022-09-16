@@ -18,7 +18,6 @@ class NetworkUtil {
         }
     }
 
-
     val isOnline: Boolean
         get() {
             try {

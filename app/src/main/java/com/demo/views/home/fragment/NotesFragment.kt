@@ -28,6 +28,8 @@ class NotesFragment(
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
+
+
     ): View {
         fragmentNotesBinding = FragmentNotesBinding.inflate(layoutInflater)
         return fragmentNotesBinding.root
