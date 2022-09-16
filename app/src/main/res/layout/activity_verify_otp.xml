@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".views.verify_otp.activity.VerifyOtpActivity">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="verifyOtpViewModel"
+            type="com.demo.views.verify_otp.veiwmodel.VerifyOtpViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvGetOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="ascgsachgs"
+            android:textSize="18sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="@{verifyOtpViewModel::onclickOnEditIcon}"
+            android:src="@drawable/vector"
+            app:layout_constraintBottom_toBottomOf="@+id/tvGetOtp"
+            app:layout_constraintStart_toEndOf="@+id/tvGetOtp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:text="@string/enter_the_notp"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvGetOtp" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edPhoneNumber"
+            style="@style/MyEditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="4"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:text="@={verifyOtpViewModel.otp}"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPhoneNumber" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/style_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:onClick="@{verifyOtpViewModel::verifyOtp}"
+            android:text="@string/continues"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edPhoneNumber" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

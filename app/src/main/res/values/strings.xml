@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">assignment</string>
+    <string name="welcome">Welcome</string>
+    <string name="successful">Successful</string>
+    <string name="unsuccessful">Unsuccessful</string>
+    <string name="email">Email:</string>
+    <string name="phone_no">Phone no.:</string>
+    <string name="name">Name:</string>
+    <string name="city">City:</string>
+    <string name="company">Company:</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="enter_your_phone_number">Enter Your Phone \nNumber</string>
+    <string name="continues">Continue</string>
+    <string name="enter_the_notp">Enter The \nOtp</string>
+    <string name="premium_members_can_view_all_their_likes_at_onc">Premium members can \nview all their likes at onc</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="personal_message_to_you">Personal message to you</string>
+    <string name="notes">Notes</string>
+    <string name="tap_to_review_50_notes">Tap to review 50+ notes</string>
+</resources>
