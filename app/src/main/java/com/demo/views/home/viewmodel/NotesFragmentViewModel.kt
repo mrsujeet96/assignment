@@ -13,6 +13,7 @@ import com.demo.views.home.activity.MainActivity
 class NotesFragmentViewModel : ViewModel() {
 
     private var profiles: Profiles? = null
+    @SuppressLint("StaticFieldLeak")
     var activity: MainActivity? = null
     fun setActivityInstance(activity: MainActivity) {
         this.activity = activity
