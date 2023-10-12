@@ -10,7 +10,6 @@ import com.bumptech.glide.Glide
 import com.demo.views.home.activity.MainActivity
 
 
-@SuppressLint("StaticFieldLeak")
 class NotesFragmentViewModel : ViewModel() {
 
     private var profiles: Profiles? = null
