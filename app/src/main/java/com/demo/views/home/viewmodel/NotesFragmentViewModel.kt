@@ -1,6 +1,7 @@
 package com.demo.views.home.viewmodel
 
 import Profiles
+import android.annotation.SuppressLint
 import android.net.Uri
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
@@ -9,6 +10,7 @@ import com.bumptech.glide.Glide
 import com.demo.views.home.activity.MainActivity
 
 
+@SuppressLint("StaticFieldLeak")
 class NotesFragmentViewModel : ViewModel() {
 
     private var profiles: Profiles? = null
